@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-01/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla JS | Modules</title>
+    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-01/favicon.svg" />
+    <title>Form</title>
+    <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-BZZaXJiX.css">
   </head>
   <body>
@@ -19,7 +22,7 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./2-form.html">Form</a>
+          <a class="nav-link active" href="./2-form.html">Form</a>
         </li>
       </ul>
     </nav>
@@ -29,7 +32,17 @@
 
     <main>
       <div class="container">
-        <h1 class="main-title">Welcome to the App</h1>
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </main>
 
@@ -38,6 +51,7 @@
     <p class="footer-desc">Made with ✨</p>
   </div>
 </footer>
+
 
   </body>
 </html>
